@@ -1,4 +1,11 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {};
+import { createVanillaExtractPlugin } from '@vanilla-extract/next-plugin';
+const withVanillaExtract = createVanillaExtractPlugin();
 
-export default nextConfig;
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+    images: {
+        domains: ['boun-studio.vercel.app'],
+    },
+};
+
+export default withVanillaExtract(nextConfig);
