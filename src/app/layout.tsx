@@ -1,23 +1,25 @@
 import type { Metadata } from 'next';
 
+import { META_DATA } from '@/constants/metadata';
+
 import Ga from './Ga';
 
 export const metadata: Metadata = {
-    title: 'BOUN studio',
-    description: 'BOUN studio',
-    robots: 'https://boun-studio.vercel.app/',
+    title: META_DATA.title,
+    description: META_DATA.description,
+    robots: META_DATA.url,
     openGraph: {
         type: 'website',
         locale: 'ko_KR',
-        url: 'https://boun-studio.vercel.app/',
-        title: 'BOUN studio',
-        siteName: 'BOUN studio',
+        url: META_DATA.url,
+        title: META_DATA.title,
+        siteName: META_DATA.title,
         images: [
             {
-                url: '/share.png',
+                url: META_DATA.image,
                 width: 285,
                 height: 167,
-                alt: 'BOUN studio',
+                alt: META_DATA.title,
             },
         ],
     },
