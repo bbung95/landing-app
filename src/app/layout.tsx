@@ -1,3 +1,6 @@
+import '@/styles/reset.css';
+import '@/styles/global.css';
+
 import type { Metadata } from 'next';
 
 import { META_DATA } from '@/constants/metadata';
@@ -17,8 +20,6 @@ export const metadata: Metadata = {
         images: [
             {
                 url: META_DATA.image,
-                width: 285,
-                height: 167,
                 alt: META_DATA.title,
             },
         ],
