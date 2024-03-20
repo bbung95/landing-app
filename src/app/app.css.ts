@@ -3,11 +3,12 @@ import { style } from '@vanilla-extract/css';
 export const container = style({
     height: '100%',
     width: '100%',
-    position: 'absolute',
+    paddingBottom: 200,
+    overflow: 'hidden',
 });
 
 export const contentsInfo = style({
-    marginTop: 100,
+    paddingTop: 100,
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
@@ -27,30 +28,6 @@ export const description = style({
             width: 280,
         },
     },
-});
-
-export const timewatch = style({
-    marginTop: 14,
-    marginBottom: 50,
-    display: 'flex',
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: 10,
-    color: '#000',
-    fontSize: 16,
-});
-
-export const timeCircle = style({
-    width: 40,
-    height: 40,
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    fontWeight: 500,
-    borderRadius: 20,
-    color: '#fff',
-    lineHeight: 120,
-    backgroundColor: '#000',
 });
 
 export const contentsWarpper = style({
@@ -78,7 +55,8 @@ export const contents = style({
 });
 
 export const subContentsInfo = style({
-    margin: '20px auto 0',
+    paddingTop: 20,
+    margin: '0 auto ',
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'center',
