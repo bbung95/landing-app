@@ -7,7 +7,7 @@ export const button = style({
     color: '#fff',
     fontSize: 18,
     fontWeight: 700,
-    backgroundColor: '#087eff',
+    backgroundColor: '#0025FF',
     border: 'none',
     borderRadius: 30,
     transition: 'all 0.1s',
