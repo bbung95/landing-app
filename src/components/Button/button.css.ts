@@ -13,7 +13,7 @@ export const button = style({
     transition: 'all 0.1s',
 
     '@media': {
-        'screen and (max-width: 768px)': {
+        'screen and (max-width: 767px)': {
             height: 50,
             width: 160,
             fontSize: 16,

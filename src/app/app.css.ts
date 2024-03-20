@@ -13,18 +13,16 @@ export const contentsInfo = style({
     flexDirection: 'column',
     alignItems: 'center',
     color: '#000',
-    fontSize: 24,
-    fontWeight: 600,
-});
-
-export const logo = style({
-    fontSize: 20,
 });
 
 export const description = style({
+    fontSize: 32,
+    width: 350,
+    fontWeight: 600,
     textAlign: 'center',
     '@media': {
-        'screen and (max-width: 550px)': {
+        'screen and (max-width: 767px)': {
+            fontSize: 24,
             width: 280,
         },
     },
@@ -36,11 +34,11 @@ export const contentsWarpper = style({
     position: 'relative',
     margin: '0 auto',
     '@media': {
-        'screen and (min-width: 1281px)': {
-            width: 1280,
-            height: 720,
+        'screen and (min-width: 768px)': {
+            width: 768,
+            height: 430,
         },
-        'screen and (max-width: 1280px)': {
+        'screen and (max-width: 767px)': {
             paddingTop: '56%',
         },
     },
@@ -64,10 +62,18 @@ export const subContentsInfo = style({
 });
 
 export const subDescription = style({
-    fontWeight: 700,
+    fontSize: 18,
+    fontWeight: 650,
     textAlign: 'center',
+
+    '@media': {
+        'screen and (min-width: 768px)': {
+            fontSize: 20,
+        },
+    },
 });
 
 export const highlight = style({
     color: '#0025FF',
+    fontWeight: 700,
 });

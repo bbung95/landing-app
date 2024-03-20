@@ -1,5 +1,3 @@
-import Image from 'next/image';
-
 import Button from '@/components/Button';
 import TimeWatch from '@/components/TimeWatch/TimeWatch';
 import Toast from '@/components/Toast';
@@ -13,14 +11,11 @@ const Home = () => {
     return (
         <main className={style.container}>
             <div className={style.contentsInfo}>
-                <h1 className={style.logo}>
-                    <Image src={'/logo.svg'} width={200} height={50} alt='BOUN logo' />
-                </h1>
                 <p className={style.description}>
                     판매자의 신뢰를 상승시키는 유튜브 채널 운영 전략
                 </p>
 
-                <div className={style.description}>무료 강의 종료까지</div>
+                <div className={style.subDescription}>무료 강의 종료까지</div>
                 <TimeWatch />
             </div>
             <div className={style.contentsWarpper}>
