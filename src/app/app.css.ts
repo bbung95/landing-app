@@ -7,27 +7,25 @@ export const container = style({
 });
 
 export const contentsWarpper = style({
-    maxWidth: 1280,
-    maxHeight: 720,
     width: '100%',
     height: '0',
-    paddingTop: '56%',
     position: 'relative',
 
+    left: '50%',
+    top: '50%',
+    transform: 'translate(-50%,-50%)',
     '@media': {
         'screen and (min-width: 1281px)': {
-            margin: '200px auto 0',
+            width: 1280,
+            height: 720,
         },
         'screen and (max-width: 1280px)': {
-            top: '50%',
-            transform: 'translateY(-50%)',
+            paddingTop: '56%',
         },
     },
 });
 
 export const contents = style({
-    maxWidth: 1280,
-    maxHeight: 720,
     width: '100%',
     height: '100%',
     position: 'absolute',

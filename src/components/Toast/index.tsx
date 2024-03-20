@@ -21,7 +21,7 @@ const Toast = (props: Props) => {
                     initial={{ opacity: 0, x: '-50%' }}
                     animate={{
                         opacity: 1,
-                        y: -50,
+                        y: -40,
                         x: '-50%',
                         transition: {
                             duration: 1,
