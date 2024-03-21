@@ -20,8 +20,6 @@ const useTimeWatch = (initilTime: InitialTime) => {
         const formattedMinutes = String(minutes).padStart(2, '0');
         const formattedSeconds = String(seconds).padStart(2, '0');
 
-        console.log(timeLeft, hours, formattedHours);
-
         setTime({
             day: '0',
             hours: formattedHours,

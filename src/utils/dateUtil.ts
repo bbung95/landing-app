@@ -14,9 +14,7 @@ export const getCurrentDate = () => {
 export const getTimeLeft = () => {
     const { hour, minute, second } = getCurrentDate();
 
-    console.log(hour);
-
-    const remainingHours = 24 - hour;
+    const remainingHours = 24;
     const remainingMinutes = hour === 23 ? 0 : 0;
     const remainingSeconds = 0;
 

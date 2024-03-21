@@ -8,7 +8,7 @@ export const container = style({
 });
 
 export const contentsInfo = style({
-    paddingTop: 100,
+    paddingTop: 60,
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
@@ -16,14 +16,15 @@ export const contentsInfo = style({
 });
 
 export const description = style({
-    fontSize: 32,
-    width: 350,
+    fontSize: 36,
+    margin: '22px 0 48px',
+    width: 400,
     fontWeight: 600,
     textAlign: 'center',
     '@media': {
         'screen and (max-width: 767px)': {
-            fontSize: 24,
-            width: 280,
+            fontSize: 28,
+            width: 320,
         },
     },
 });
@@ -59,6 +60,12 @@ export const subContentsInfo = style({
     flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'center',
+    fontSize: 18,
+    '@media': {
+        'screen and (min-width: 768px)': {
+            fontSize: 22,
+        },
+    },
 });
 
 export const subDescription = style({
@@ -68,7 +75,7 @@ export const subDescription = style({
 
     '@media': {
         'screen and (min-width: 768px)': {
-            fontSize: 20,
+            fontSize: 22,
         },
     },
 });
