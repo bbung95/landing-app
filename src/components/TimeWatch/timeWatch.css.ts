@@ -2,7 +2,7 @@ import { style } from '@vanilla-extract/css';
 
 export const timewatch = style({
     marginTop: 14,
-    marginBottom: 48,
+
     display: 'flex',
     flexDirection: 'row',
     gap: 10,

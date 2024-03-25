@@ -9,13 +9,14 @@ export const container = style({
 
 export const contentsInfo = style({
     paddingTop: 60,
+    paddingBottom: 48,
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
     color: '#000',
 });
 
-export const description = style({
+export const title = style({
     fontSize: 36,
     margin: '22px 0 48px',
     width: 400,
@@ -68,14 +69,28 @@ export const subContentsInfo = style({
     },
 });
 
-export const subDescription = style({
+export const description = style({
     fontSize: 18,
     fontWeight: 650,
     textAlign: 'center',
+    lineHeight: '140%',
 
     '@media': {
         'screen and (min-width: 768px)': {
             fontSize: 22,
+        },
+    },
+});
+
+export const subDescription = style({
+    fontSize: 16,
+    fontWeight: 650,
+    textAlign: 'center',
+    lineHeight: '140%',
+
+    '@media': {
+        'screen and (min-width: 768px)': {
+            fontSize: 20,
         },
     },
 });
