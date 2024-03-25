@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import Button from '@/components/Button';
 // import TimeWatch from '@/components/TimeWatch/TimeWatch';
 import Toast from '@/components/Toast';
@@ -11,9 +12,14 @@ const Home = () => {
     return (
         <main className={style.container}>
             <div className={style.contentsInfo}>
+                <div className={style.imageWarpper}>
+                    <img src='./logo.svg' alt='boun studio' />
+                </div>
                 <p className={style.title}>판매자의 신뢰를 상승시키는 유튜브 채널 운영 전략</p>
 
-                <div className={style.description}>📍아래 강의는 예고없이 곧 종료됩니다.</div>
+                <div className={style.description} style={{ fontWeight: 600 }}>
+                    📍아래 강의는 예고없이 곧 종료됩니다.
+                </div>
                 {/* <div className={style.description}>무료 강의 종료까지</div>
                 <TimeWatch /> */}
             </div>

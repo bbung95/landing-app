@@ -9,11 +9,21 @@ export const container = style({
 
 export const contentsInfo = style({
     paddingTop: 60,
-    paddingBottom: 48,
+    paddingBottom: 20,
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
     color: '#000',
+});
+
+export const imageWarpper = style({
+    width: 180,
+    margin: '24px 0',
+    '@media': {
+        'screen and (max-width: 767px)': {
+            width: 140,
+        },
+    },
 });
 
 export const title = style({
